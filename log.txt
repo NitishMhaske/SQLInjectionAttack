@@ -1,0 +1,102 @@
+Login Failed
+SELECT * FROM users WHERE email ='ads' AND password = md5('ads');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('as');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('a');
+Login Failed
+SELECT * FROM users WHERE email ='abcd' AND password = md5('abcd');
+Login Failed
+SELECT * FROM users WHERE email ='abcd' AND password = md5('abcd');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('abcd');
+Login Failed
+SELECT * FROM users WHERE email ='abcd' AND password = md5('abcd');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 LIMIT 1 -- ' ]' AND password = md5('hello');
+Successful Login!!
+SELECT * FROM users WHERE email ='m@m.com' AND password = md5('abc');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='abcd ' OR 1 = 1 -- [' AND password = md5('abc');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx' OR 1 = 1 -- ' ' AND password = md5('abd');
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='abcd' AND 1 = 1 --[' AND password = md5('abcd');
+Login Failed
+SELECT * FROM users WHERE email ='' AND password = md5('');
+Login Failed
+SELECT * FROM users WHERE email ='m@m.com' AND password = md5('abc');
+Login Failed
+SELECT * FROM users WHERE email ='m@m.com' AND password = md5('123');
+Successful Login!!
+SELECT * FROM users WHERE email ='m@m.com' AND password = md5('abc');
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='m@m.com' or 1 = 1 -- '' AND password = md5('jjd');
+Login Failed
+SELECT * FROM users WHERE email ='' AND password = md5('');
+Login Failed
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = md5('alice');
+Login Failed
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = md5('alice');
+Successful Login!!
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = 'alice';
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='alice' or 1 = 1 -- '' AND password = 'asdfghjk';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice' and blah '' AND password = 'dgjk;';
+Login Failed
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = 'asdf';
+Login Failed
+SELECT * FROM users WHERE email ='' AND password = '';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com'; INSERT INTO `users` (`ID`, `email`, `password`) VALUES ('6', 'fox@gmail.com', 'fox'); --'' AND password = 'asd';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='aaa' ; INSERT INTO `users` (`ID`, `email`, `password`) VALUES ('5', 'evy@gmail.com', 'evy'); --' AND password = 'lol';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; union INSERT INTO `users` (`ID`, `email`, `password`) VALUES ('5', 'evy@gmail.com', 'evy'); -- '' AND password = 'lol';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('5', 'evy@gmail.com', 'evy'); --'' AND password = 'orsss';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; drop table users; --'' AND password = 'kksksk';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('5', 'fox@gmail.com', 'fox'); -- '' AND password = 'adsadsa';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('6', 'fox@gmail.com', 'fox'); -- ' AND password = 'abc';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('6', 'fox@gmail.com', 'fox'); -- ' AND password = 'alice';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('6', 'fox@gmail.com', 'fox'); -- '' AND password = 'alice';
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='aaa' or 1 = 1 -- ' AND password = 'asdfj';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('6', 'fox@gmail.com', 'fox'); -- ' AND password = 'xyz';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='alice@gmail.com' ; INSERT INTO users VALUES ('6', 'fox@gmail.com', 'fox'); -- ' AND password = 'kkk';
+Successful Login!!
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = 'alice';
+Login Failed
+SELECT * FROM users WHERE email ='abcd ' AND password = 'abcd';
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='abc' or 1=1  -- ' AND password = 'abcd';
+Login Failed!! Tried injecting SQL
+SELECT * FROM users WHERE email ='abce ' and 1=1 -- ' AND password = 'abc';
+Successful Login!!
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = 'alice';
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='alice' or 1 = 1 -- ' AND password = 'lol';
+Login Failed
+SELECT * FROM users WHERE email ='' AND password = '';
+Successful Login!!
+SELECT * FROM users WHERE email ='alice@gmail.com' AND password = 'alice';
+Successful Login!!SQL injection attack
+SELECT * FROM users WHERE email ='xxx@xxx.xxx' OR 1 = 1 LIMIT 1 -- '' AND password = '12345';
